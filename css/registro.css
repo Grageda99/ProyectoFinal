@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url(imagenes/wall_brick_texture_shadow_black_and_white_44987_1680x1050.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+.form-Registro {
+  width: 98%;
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 7px;
+}
+.form-Titulo {
+  background: #0f2b6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid black;
+}
+.Contenedor-inputs {
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input {
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.input-48 {
+  width: 48%;
+}
+.btn-enviar {
+  width: 48%;
+}
+.input-100 {
+  width: 100%;
+}
+.form-link {
+  width: 100%;
+  margin: 7px;
+  text-align: center;
+}
