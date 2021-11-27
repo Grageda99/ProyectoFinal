@@ -2,72 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <link href="estilo-conctacto.css" rel="stylesheet">
+    <meta charset="UFT-8">
+    <meta name="viewport"
+        content="width=device-whidth, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
+    <TItle>Autos usados y seminuevos</TItle>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="fonts">
 
-  
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" href="img/coche-de-carreras.png" sizes="16x16">
+
 </head>
 
 <body>
-
-
-    <div class="Contenedor">
-
-        <form action="RegistraC.php"  method="POST" class="form">
-            <div class="form-header">
-                <h1 class="form-title">Contactos hoy mismo para obtener más
-                        información.</span></h1>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-cab">Quiero un nuevo coche</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="ResgistrarUsuario.html" class="icon-cab">Iniciar secion/ Registrate</a>
+                <a href="#">Inicio</a>
+                <a href="#">Todo los autos</a>
+                <a href="#">Vende tu auto</a>
+                <a href="#">Noticias</a>
+                <a href="login.html">Mi cuenta</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <img src="img/chevrolet_33corvette_stingray_c7_95549_1600x900.jpg" alt="">
+            <div class="contenedor">
+                <h2>Encuentra tu proximo auto</h2>
+                <p>¿Cual es el auto que tus sueños?</p>
+                <a href="#">Buscar</a>
             </div>
-            <label for="Nombre" class="form-label">Nombre:</label>
-            <input type="text" id="nombre" name="n" class="form-input"  placeholder="Escriba tu Nombre" required>
+        </section>
+        <section id="bienvenidos">
+            <h3 class="titulo">Quienes somos</h3>
+            <p>Hola <span class="bold">somos una nueva pagina web de ventas de autos.</span>Encuentra Autos y
+                camionetas usadas y
+                nuevas en venta en Hermosillo. En nuestro sitio web puedes hacer búsquedas,
+                comparaciones, explorar fotos y tener un buen trato.
+        </section>
+        <section id="conose">
+            <h3 class="titulo2">Al momento de vender un auto</h3>
+            <img src="img/compra-1024x683.png" alt="icono">
 
-            <label for="Asunto" class="form-label">Asunto:</label>
-            <input type="text" id="Asunto" name="A" class="form-input"  placeholder="Escriba su Asunto"required>
+            <p>Confía en nosotros, <span class="bold">estarás de la mano con nuestros asesores.</span>
+                Minimizando así todos los riesgos, aparte, gracias al alcance de nuestras plataformas, nuestras
+                disponibilidad, atención a cliente y los distintos tipos de compra como créditos o intercambios que
+                ofrecemos a nuestros clientes, ¡Lograras consolidar tu venta y objetivos de la forma más rápida!</p><br>
+        </section>
+        <section id="conose2">
 
-            <label for="Correo" class="form-label">Correo Eletronico:</label>
-            <input type="email" id="Correo" name="c" class="form-input"  placeholder="Escriba su Correo"required>
+            <h3 class="titulo3">Al momento de comprar un auto</h3>
+            <img src="img/Untitled-1-1024x683.png" alt="icono">
 
-            <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea id="mensaje"  name="mmm" class="form-textarea"  placeholder="Aqui Escriba su Mensaje" required></textarea>
-            <input type="submit" class="btn-submit" value="Enviar" onclick="vali();">
-        </form>
+            <p>Elige quiero un nuevo coche <span class="bold">manejamos todo
+                    tipo de carros.</span>
+                Con los mejores precios y en el mejor estado, tomamos en cuenta todas las propuestas que nos gustes
+                hacer, recibimos autos de mayor o menor precio, etc. Y si no tenemos el auto que andas buscando, te
+                lo
+                conseguimos, nuestra atención y asesoría es gratuita, ¡Te sorprenderás con nuestra calidad en el
+                servicio!</p>
+
+        </section>
+
+    </main>
+    <div class="wrap">
+        <h3 class="seleccionar">Busca por marca o modelo</h3>
+
+        <div class="store-wrapper">
+            <div class="category_list">
+                <a class="category_item" category="all">Todo</a>
+                <a class="category_item" category="modelo">Modelo</a>
+                <a class=" category_item" category="marcas">Marca</a>
+            </div>
+            <section class="products-list">
+                <div class="product-item" category="modelo">
+                    <img src="img/ModeloCarros/5d4f69f108e586b40c7e.png" alt="icono">
+                    <a href="#">Sedan</a>
+                </div>
+                <div class="product-item" category="modelo">
+                    <img src="img/ModeloCarros/pickup.png" alt="icono">
+                    <a href="#">Pickup </a>
+                </div>
+                <div class="product-item" category="modelo">
+                    <img src="img/ModeloCarros/hatchback.png" alt="icono">
+                    <a href="#">Hatchback</a>
+                </div>
+                <div class="product-item" category="modelo">
+                    <img src="img/ModeloCarros/minivan.png" alt="icono">
+                    <a href="#">Minivan</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/ford.png" alt="icono">
+                    <a href="#">Ford</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/mazda.png" alt="icono">
+                    <a href="#">Mazda</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/chevrolet.png" alt="icono">
+                    <a href="#">Chevrolet</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/honda.png" alt="icono">
+                    <a href="#">Honda</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/kia.png" alt="icono">
+                    <a href="#">Kia</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/580b57fcd9996e24bc43c4a5.png" alt="icono">
+                    <a href="#">Volkswagen</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/580b57fcd9996e24bc43c488.png" alt="icono">
+                    <a href="#">Jeep</a>
+                </div>
+                <div class="product-item" category="marcas">
+                    <img src="img/580b57fcd9996e24bc43c497.png" alt="icono">
+                    <a href="#">Nissan</a>
+                </div>
+            </section>
+        </div>
     </div>
+
+
+
+    <section class="trabajos">
+        <div class="contenedor">
+            <h3 class="titulo">SUCURSAL HERMOSILLO</h3>
+            <div class="contenedor-trabajos">
+                <div class="trabajo">
+                    <div class="thumb">
+                        <img src="img/Sucursal/1.png" alt="Imagen de Prueba">
+                    </div>
+                </div>
+                <div class="trabajo">
+                    <div class="thumb">
+                        <img src="img/Sucursal/4.png" alt="Imagen de Prueba">
+                    </div>
+                </div>
+                <div class="trabajo">
+                    <div class="thumb">
+                        <img src="img/Sucursal/3.png" alt="Imagen de Prueba">
+                    </div>
+                </div>
+                <div class="trabajo">
+                    <div class="thumb">
+                        <img src="img/Sucursal/2.png" alt="Imagen de Prueba">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bienvenidos">
+        <h3 class="titulo">Ubicacion</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.359884987837!2d-110.95734122512383!3d29.084424716722868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce85414faf595b%3A0xc5adf06d97cd288c!2sHmo%20Automotriz%20Seminuevos!5e0!3m2!1ses-419!2smx!4v1636320725033!5m2!1ses-419!2smx"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <section class="contacto">
+            <div class="contenedor-contacto">
+                <h3 class="titulo">C<span>ontactanos hoy mismo para obtener más
+                        información.</span></h3>
+                <form action="" class="formulario">
+                    <label for="Nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="name" class="form-input" placeholder="Escribe tu nombre"
+                        required>
+
+                    <label for="Asunto" class="form-label">Asunto:</label>
+                    <input type="text" id="Asunto" name="asunto" class="form-input" placeholder="Escriba el asunto"
+                        required>
+
+                    <label for="Correo" class="form-label">Correo Eletronico:</label>
+                    <input type="email" id="Correo" name="mail" class="form-input" placeholder="Escriba su correo"
+                        required>
+
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="men" class="form-textarea" placeholder="Aqui escriba su mensaje"
+                        required></textarea>
+                    <input type="submit" value="Enviar" class="boton" onclick=" vali();">
+                </form>
+            </div>
+        </section>
+        <section class="redes-sociales">
+            <div class="redes">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+
+            </div>
+
+        </section>
+    </footer>
+
 </body>
-<br>
 
-
+</html>
 <script>
     function vali() {
-    var nombre,Asunto,Correo,mensaje,Exprecion;
-    var nombre = document.getElementById("nombre").value;
-    var Asunto = document.getElementById("Asunto").value;
-    var Correo = document.getElementById("Correo").value;
-    var mensaje = document.getElementById("mensaje").value;
+        var nombre, Asunto, Correo, mensaje, Exprecion;
+        var nombre = document.getElementById("nombre").value;
+        var Asunto = document.getElementById("Asunto").value;
+        var Correo = document.getElementById("Correo").value;
+        var mensaje = document.getElementById("mensaje").value;
 
-    Exprecion = /\w+@\w+\.+[a-z]/;
+        Exprecion = /\w+@\w+\.+[a-z]/;
 
 
-    if (nombre ===""|| Asunto===""|| Correo===""|| mensaje==="") {
-        alert("Todos los campos son obligatorios")
-        return false;
-    }
-    else if(nombre.length>30){
-        alert("El nombre es muy largo");
-    }
-    else if(Asunto.length>30){
-        alert("El Asunto es muy largo");
-    }
-    else if(Correo.length>100){
-        alert("El Correo es muy largo");
-    }
-    else if(!Exprecion.test(Correo)){
-        alert("El Correo no es Valido")
-        return false;
+        if (nombre === "" || Asunto === "" || Correo === "" || mensaje === "") {
+            alert("Todos los campos son obligatorios")
+            return false;
+        }
+        else if (nombre.length > 30) {
+            alert("El nombre es muy largo");
+        }
+        else if (Asunto.length > 30) {
+            alert("El Asunto es muy largo");
+        }
+        else if (Correo.length > 100) {
+            alert("El Correo es muy largo");
+        }
+        else if (!Exprecion.test(Correo)) {
+            alert("El Correo no es Valido")
+            return false;
+
+        }
 
     }
-   
-}
-    </script>
+</script>
