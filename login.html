@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UFT-8">
+  <meta name="viewport"
+    content="width=device-whidth, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
+  <TItle>Login</TItle>
+  <link rel="stylesheet" href="css/login.css">
+
+  <link rel="icon" href="img/coche-de-carreras.png" sizes="16x16">
+
+</head>
+
+
+
+<body>
+  <form name="Login" method="POST">
+    <h2>Iniciar Sesión</h2>
+    <input type="email" placeholder="&#128272; Usuario" name="usuario" id="idusuario" required>
+    <input type="password" placeholder="&#128272; Contraseña" name="clave" id="idContraseña" required>
+    <input type="submit" value="Iniciar Sesión" onclick="validar();">
+
+    <p class="form-link">¿No Tienes una Cuenta? <a href="ResgistrarUsuario.html">Ingresa aqui</a></p>
+    <p class="form-link">Iniciar <a href="index.html">Ingresa aqui</a></p>
+
+
+  </form>
+</body>
+
+</html>
+<script>
+  function validar() {
+    var usuario, clave, Exprecion;
+    var usuario = document.getElementById("idusuario").value;
+    var clave = document.getElementById("idContraseña").value;
+    Exprecion = /\w+@\w+\.+[a-z]/;
+
+    if (usuario === "" || clave === "") {
+      alert("El Usuario o la contraseña no son correctos.")
+      return false;
+    }
+    if (!Exprecion.test(usuario)) {
+      alert("El Usuario no es valido")
+      return false;
+
+    }
+  }
+
+</script>
