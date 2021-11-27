@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/registro.css" rel="stylesheet">
+    <title>Registrate</title>
+</head>
+
+<body>
+    <h1>Registro de usuario</h1>
+    <div class="from">
+        <form action="RegistraU.php" method="POST" class="form-Registro">
+            <h2 class="form-Titulo">Escribe tus datos</h2>
+            <div class="Contenedor-inputs">
+                <input type="text" id="idnombre" name="Nombre" placeholder="Nombre" class="input-48" required>
+                <input type="text" id="idpaterno" name="ApellidoP" placeholder="Apellido Paterno" class="input-48"
+                    required>
+                <input type="text" id="idmaterno" name="apellidoM" placeholder="Apellido Materno" class="input-48"
+                    required>
+                <input type="text" id="sexo" name="sexo" placeholder="Sexo" class="input-48" required>
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-100" required>
+                Fecha de Nacimiento:<input type="date" id="fecha" name="fecha" class="input-100" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" class="input-100" required>
+                <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48" required>
+                <input type="submit" value="Registrar" class="btn-enviar" onclick="validar();">
+                <p class="form-link">¿Ya tienes una cuenta? <a href="login.html">Ingresa aqui</p>
+            </div>
+</body>
+
+</html>
+<script>
+
+    function validar() {
+        var Nombre, ApellidoP, apellidoM, sexo, telefono, fecha, email, clave, Exprecion;
+        var Nombre = document.getElementById("idnombre").value;
+        ApellidoP = document.getElementById("idpaterno").value;
+        apellidoM = document.getElementById("idmaterno").value;
+        sexo = document.getElementById("sexo").value;
+        telefono = document.getElementById("telefono").value;
+        fecha = document.getElementById("fecha").value;
+        email = document.getElementById("email").value;
+        clave = document.getElementById("clave").value;
+
+        if (Nombre === "" || ApellidoP === "" || apellidoM === "" || sexo === "" || Telefono === "" || fecha === "" || email === "" || clave === "") {
+            alert("Todos los Campos son Obligatorios");
+            return false;
+        }
+        else if (Nombre.legth > 20) {
+            alert("El nombres es demasiado largo")
+            return false;
+        }
+        else if (ApellidoP.legth > 30) {
+            alert("El apellido es demasiado largo")
+            return false;
+        }
+        else if (apellidoM.legth > 30) {
+            alert("El apellido materno es demasiado largo")
+            return false;
+        }
+        else if (sexo.legth > 10) {
+            alert("El sexo es demasiado largo")
+            return false;
+        }
+        else if (telefono.legth > 10) {
+            alert("El numero telefonico solo son 10 digitos")
+            return false;
+        }
+        else if (isNaN(telefono)) {
+            alert("El telefono ingresado no es un numero")
+            return false;
+
+        }
+        else if (email.legth > 100) {
+            alert("El correo es demasido largo")
+            return false;
+        }
+        else if (clave.legth > 10) {
+            alert("La contraseña es demasido larga")
+        }
+    }
+
+
+</script>
