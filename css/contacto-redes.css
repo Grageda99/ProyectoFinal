@@ -1,0 +1,94 @@
+.contenedor-contacto {
+  width: 90%;
+  max-width: 1000px;
+  background: transparent;
+  margin: auto;
+  overflow: hidden;
+}
+footer .contacto {
+  padding: 60px 0px;
+}
+footer .contacto .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 60px;
+  font-weight: 300;
+  color: blue;
+  text-align: center;
+}
+footer .contacto .formulario .form-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #0f2b6b;
+}
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+  width: 100%;
+  margin-bottom: 15px;
+}
+footer .contacto .formulario textarea {
+  width: 100%;
+  height: 100px;
+  min-width: 100%;
+  margin-bottom: 15px;
+  min-height: 100px;
+  max-height: 300px;
+}
+footer .contacto .formulario .form-input,
+.form-textarea {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0f2b6b;
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contenedor-contacto .formulario .boton {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  outline: none;
+  background: #0f2b6b;
+  font-size: 20px;
+  border: none;
+  color: white;
+  padding: 15px 0;
+  cursor: pointer;
+}
+footer .redes-sociales {
+  background: #0f2b6b;
+  padding: 60px 0;
+}
+footer .redes-sociales .redes {
+  display: flex;
+  justify-content: center;
+}
+footer .redes-sociales .redes a {
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  font-size: 30px;
+  padding: 15px 0;
+  display: block;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+footer .redes-sociales .redes .twitter:hover {
+  background: #1da1f2;
+}
+footer .redes-sociales .redes .facebook:hover {
+  background: #3b5998;
+}
+footer .redes-sociales .redes .youtube:hover {
+  background: #cd201f;
+}
+footer .redes-sociales .redes .instagram:hover {
+  background: #c13584;
+}
