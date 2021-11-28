@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  background-color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.page-nav {
+  background: #0f2b6b;
+  border: 1px solid black;
+  position: relative;
+}
+
+.page-nav h1 {
+  margin: 20px;
+  color: white;
+}
+.button-checkout {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.button-add:hover {
+  background-color: green;
+  color: white;
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+
+.product-container {
+  margin: 15px;
+  padding: 2px 16px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+  background-color: white;
+}
+.product-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(red, green, blue, alpha);
+}
+
+.product-container img {
+  width: 300px;
+}
+
+.product-container h1 {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.button-add {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.button-add:hover {
+  background-color: green;
+  color: white;
+}
