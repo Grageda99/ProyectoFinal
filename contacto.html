@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href="css/estilo-conctacto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="index.html"><img src="img/unnamed.png" width="150" alt="Logo"></a>
+    </div>
+
+    <div class="Contenedor">
+
+        <form action="RegistraC.php" method="POST" class="form">
+            <div class="form-header">
+                <h1 class="form-title">C<span>ontactos hoy mismo si deseas vender tu auto.
+                    </span></h1>
+            </div>
+            <label for="Nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" name="n" class="form-input" placeholder="Escriba tu Nombre" required>
+
+            <label for="Asunto" class="form-label">Asunto:</label>
+            <input type="text" id="Asunto" name="A" class="form-input" placeholder="Escriba su Asunto" required>
+
+            <label for="Correo" class="form-label">Correo Eletronico:</label>
+            <input type="email" id="Correo" name="c" class="form-input" placeholder="Escriba su Correo" required>
+
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea id="mensaje" name="mmm" class="form-textarea" placeholder="Aqui Escriba su Mensaje"
+                required></textarea>
+            <input type="submit" class="btn-submit" value="Enviar" onclick="vali();">
+        </form>
+    </div>
+</body>
+<br>
+
+<body>
+    <div class="social-bar">
+        <a href="https://www.facebook.com/MercadoLibre/" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://twitter.com/ML_Mexico?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/mercadolibre.mex/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
+    </div>
+</body>
+<script>
+    function vali() {
+        var nombre, Asunto, Correo, mensaje, Exprecion;
+        var nombre = document.getElementById("nombre").value;
+        var Asunto = document.getElementById("Asunto").value;
+        var Correo = document.getElementById("Correo").value;
+        var mensaje = document.getElementById("mensaje").value;
+
+        Exprecion = /\w+@\w+\.+[a-z]/;
+
+
+        if (nombre === "" || Asunto === "" || Correo === "" || mensaje === "") {
+            alert("Todos los campos son obligatorios")
+            return false;
+        }
+        else if (nombre.length > 30) {
+            alert("El nombre es muy largo");
+        }
+        else if (Asunto.length > 30) {
+            alert("El Asunto es muy largo");
+        }
+        else if (Correo.length > 100) {
+            alert("El Correo es muy largo");
+        }
+        else if (!Exprecion.test(Correo)) {
+            alert("El Correo no es Valido")
+            return false;
+
+        }
+
+    }
+</script>
